@@ -123,7 +123,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 if DEBUG:
     STATICFILES_DIRS = [
-        BASE_DIR.joinpath('static')
+        BASE_DIR.joinpath('statics')
     ]
 else:
     STATIC_ROOT = BASE_DIR.joinpath('statics')

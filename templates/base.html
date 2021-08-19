@@ -1,0 +1,33 @@
+{% load static %}
+<!doctype html>
+<html lang="zh-CN" style="height: 100%">
+<head>
+    <!-- 必须的 meta 标签 -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="{% static 'bootstrap.min.css' %}">
+
+    <title>Hello, world!</title>
+</head>
+<body style="height: 100%">
+<div class="container-fluid" style="height: 100%">
+  <div class="row" style="height: 100%">
+    <div class="col-2" style="height: 100%">
+      One of three columns
+        {% block left_side %}
+        {% endblock %}
+    </div>
+    <div class="col" style="height: 100%">
+      One of three columns
+        {% block right_side %}
+        {% endblock %}
+    </div>
+  </div>
+</div>
+{#<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"#}
+{#        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"#}
+{#        crossorigin="anonymous"></script>#}
+<script src="{% static 'jquery.slim.min.js' %}"></script>
+<script src="{% static 'bootstrap.bundle.min.js' %}"></script>
+</body>
+</html>
