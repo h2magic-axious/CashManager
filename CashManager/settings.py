@@ -78,15 +78,8 @@ WSGI_APPLICATION = 'CashManager.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.mysql',
-        'NAME': 'cash_manager',
-        'USER': 'cash_manager',
-        'PASSWORD': 'NFAcFyTCkyAdmL5f',
-        'HOST': '149.129.65.210',
-        'PORT': 3306,
-        'OPTIONS': {
-            'init_command': "SET sql_mode='STRICT_TRANS_TABLES'"
-        }
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': BASE_DIR.joinpath('db.sqlite3')
     }
 }
 
